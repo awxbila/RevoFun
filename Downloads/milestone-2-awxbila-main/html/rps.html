@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Suit - RevoFun</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Suit (Batu, Gunting, Kertas)</h1>
+    </header>
+    <main>
+      <p>Pilih salah satu dan kalahkan komputer!</p>
+      <div>
+        <button onclick="play('batu')">🪨 Batu</button>
+        <button onclick="play('gunting')">✂️ Gunting</button>
+        <button onclick="play('kertas')">📜 Kertas</button>
+      </div>
+      <h3 id="result"></h3>
+      <p>Skor: <span id="score">0</span></p>
+      <a href="../index.html" class="btn">Kembali ke Home</a>
+    </main>
+    <script src="../js/rps.js"></script>
+  </body>
+</html>
