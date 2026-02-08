@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Card - RevoFun</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        gap: 10px;
+        justify-content: center;
+      }
+      .card {
+        width: 80px;
+        height: 80px;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .flipped {
+        background: #00ffcc;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Memory Card</h1></header>
+  <main>
+  <!--input name-->
+  <div id="name-section">
+    <p>Enter your name to start:</p>
+    <input type="text" id="playerNameInput" placeholder="Your name">
+    <button onclick="startGame()">Start</button>
+  </div>
+
+  <div id="game-section" style="display:none;">
+    <p>Hello, <span id="playerName"></span>! Match all pairs to win!</p>
+    <div class="grid" id="grid"></div>
+
+    <!-- NEW: congrats message -->
+    <h2 id="congrats" style="display:none; margin-top:20px; color:green;"></h2>
+    <a href="../html/index.html" class="btn">Back to Home</a>
+  </div>
+<script src="../js/memory.js"></script>
+  </body>
+</html>
